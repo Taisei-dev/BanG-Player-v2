@@ -6,6 +6,7 @@
   "author": "ReiKohaku <hbsjzjwj@163.com>",
   "private": true,
   "scripts": {
+    "build": "quasar build",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -17,6 +18,7 @@
     "howler": "^2.2.0",
     "jszip": "^3.5.0",
     "quasar": "^1.14.3",
+    "sass":"~1.57.0",
     "showdown": "^1.9.1",
     "vue-i18n": "^8.0.0"
   },
