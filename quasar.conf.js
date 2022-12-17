@@ -69,13 +69,17 @@ module.exports = function (/* ctx */) {
       // extractCSS: false,
 
       // https://quasar.dev/quasar-cli/handling-webpack
-      extendWebpack(cfg) {
-        cfg.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /node_modules/
-        })
+    //   extendWebpack(cfg) {
+    //     cfg.module.rules.push({
+    //       enforce: 'pre',
+    //       test: /\.(js|vue)$/,
+    //       loader: 'eslint-webpack-plugin',
+    //       exclude: /node_modules/
+    //     })
+    //   },
+      chainWebpack(chain){
+        // chain.plugin('eslint-webpack-plugin')
+        // .use('plugin:vue/essential', [{ extensions: [ 'js', 'vue' ] }])
       },
     },
 

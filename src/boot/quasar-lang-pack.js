@@ -1,6 +1,5 @@
 import Settings from 'src/lib/util/settings.js';
 import Quasar from 'quasar'
-import 'quasar/lang/zh-hans.js'
 
 export default async () => {
   const locale = Settings.get('language');
